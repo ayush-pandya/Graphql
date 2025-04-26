@@ -505,7 +505,7 @@ func (ec *executionContext) field_Mutation_createTicket_argsPriority(
 
 	ctx = graphql.WithPathContext(ctx, graphql.NewPathWithField("priority"))
 	if tmp, ok := rawArgs["priority"]; ok {
-		return ec.unmarshalOTicketPriority2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketPriority(ctx, tmp)
+		return ec.unmarshalOTicketPriority2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketPriority(ctx, tmp)
 	}
 
 	var zeroVal *TicketPriority
@@ -699,7 +699,7 @@ func (ec *executionContext) field_Mutation_updateTicket_argsStatus(
 
 	ctx = graphql.WithPathContext(ctx, graphql.NewPathWithField("status"))
 	if tmp, ok := rawArgs["status"]; ok {
-		return ec.unmarshalOTicketStatus2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketStatus(ctx, tmp)
+		return ec.unmarshalOTicketStatus2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketStatus(ctx, tmp)
 	}
 
 	var zeroVal *TicketStatus
@@ -717,7 +717,7 @@ func (ec *executionContext) field_Mutation_updateTicket_argsPriority(
 
 	ctx = graphql.WithPathContext(ctx, graphql.NewPathWithField("priority"))
 	if tmp, ok := rawArgs["priority"]; ok {
-		return ec.unmarshalOTicketPriority2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketPriority(ctx, tmp)
+		return ec.unmarshalOTicketPriority2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketPriority(ctx, tmp)
 	}
 
 	var zeroVal *TicketPriority
@@ -964,7 +964,7 @@ func (ec *executionContext) _Mutation_createTicket(ctx context.Context, field gr
 	}
 	res := resTmp.(*Ticket)
 	fc.Result = res
-	return ec.marshalNTicket2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicket(ctx, field.Selections, res)
+	return ec.marshalNTicket2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicket(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_createTicket(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1041,7 +1041,7 @@ func (ec *executionContext) _Mutation_updateTicket(ctx context.Context, field gr
 	}
 	res := resTmp.(*Ticket)
 	fc.Result = res
-	return ec.marshalNTicket2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicket(ctx, field.Selections, res)
+	return ec.marshalNTicket2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicket(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_updateTicket(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1170,7 +1170,7 @@ func (ec *executionContext) _Query_tickets(ctx context.Context, field graphql.Co
 	}
 	res := resTmp.([]*Ticket)
 	fc.Result = res
-	return ec.marshalNTicket2ᚕᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketᚄ(ctx, field.Selections, res)
+	return ec.marshalNTicket2ᚕᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_tickets(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1233,7 +1233,7 @@ func (ec *executionContext) _Query_ticket(ctx context.Context, field graphql.Col
 	}
 	res := resTmp.(*Ticket)
 	fc.Result = res
-	return ec.marshalOTicket2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicket(ctx, field.Selections, res)
+	return ec.marshalOTicket2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicket(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_ticket(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1570,7 +1570,7 @@ func (ec *executionContext) _Ticket_status(ctx context.Context, field graphql.Co
 	}
 	res := resTmp.(TicketStatus)
 	fc.Result = res
-	return ec.marshalNTicketStatus2githubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketStatus(ctx, field.Selections, res)
+	return ec.marshalNTicketStatus2anxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketStatus(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Ticket_status(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1614,7 +1614,7 @@ func (ec *executionContext) _Ticket_priority(ctx context.Context, field graphql.
 	}
 	res := resTmp.(TicketPriority)
 	fc.Result = res
-	return ec.marshalNTicketPriority2githubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketPriority(ctx, field.Selections, res)
+	return ec.marshalNTicketPriority2anxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketPriority(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Ticket_priority(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1743,7 +1743,7 @@ func (ec *executionContext) _Ticket_assignee(ctx context.Context, field graphql.
 	}
 	res := resTmp.(*User)
 	fc.Result = res
-	return ec.marshalOUser2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐUser(ctx, field.Selections, res)
+	return ec.marshalOUser2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Ticket_assignee(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1792,7 +1792,7 @@ func (ec *executionContext) _Ticket_reporter(ctx context.Context, field graphql.
 	}
 	res := resTmp.(*User)
 	fc.Result = res
-	return ec.marshalOUser2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐUser(ctx, field.Selections, res)
+	return ec.marshalOUser2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Ticket_reporter(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4600,11 +4600,11 @@ func (ec *executionContext) marshalNString2string(ctx context.Context, sel ast.S
 	return res
 }
 
-func (ec *executionContext) marshalNTicket2githubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicket(ctx context.Context, sel ast.SelectionSet, v Ticket) graphql.Marshaler {
+func (ec *executionContext) marshalNTicket2anxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicket(ctx context.Context, sel ast.SelectionSet, v Ticket) graphql.Marshaler {
 	return ec._Ticket(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNTicket2ᚕᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketᚄ(ctx context.Context, sel ast.SelectionSet, v []*Ticket) graphql.Marshaler {
+func (ec *executionContext) marshalNTicket2ᚕᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketᚄ(ctx context.Context, sel ast.SelectionSet, v []*Ticket) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -4628,7 +4628,7 @@ func (ec *executionContext) marshalNTicket2ᚕᚖgithubᚗcomᚋayushᚑpandya�
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNTicket2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicket(ctx, sel, v[i])
+			ret[i] = ec.marshalNTicket2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicket(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -4648,7 +4648,7 @@ func (ec *executionContext) marshalNTicket2ᚕᚖgithubᚗcomᚋayushᚑpandya�
 	return ret
 }
 
-func (ec *executionContext) marshalNTicket2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicket(ctx context.Context, sel ast.SelectionSet, v *Ticket) graphql.Marshaler {
+func (ec *executionContext) marshalNTicket2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicket(ctx context.Context, sel ast.SelectionSet, v *Ticket) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -4658,23 +4658,23 @@ func (ec *executionContext) marshalNTicket2ᚖgithubᚗcomᚋayushᚑpandyaᚋti
 	return ec._Ticket(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNTicketPriority2githubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketPriority(ctx context.Context, v any) (TicketPriority, error) {
+func (ec *executionContext) unmarshalNTicketPriority2anxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketPriority(ctx context.Context, v any) (TicketPriority, error) {
 	var res TicketPriority
 	err := res.UnmarshalGQL(v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNTicketPriority2githubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketPriority(ctx context.Context, sel ast.SelectionSet, v TicketPriority) graphql.Marshaler {
+func (ec *executionContext) marshalNTicketPriority2anxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketPriority(ctx context.Context, sel ast.SelectionSet, v TicketPriority) graphql.Marshaler {
 	return v
 }
 
-func (ec *executionContext) unmarshalNTicketStatus2githubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketStatus(ctx context.Context, v any) (TicketStatus, error) {
+func (ec *executionContext) unmarshalNTicketStatus2anxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketStatus(ctx context.Context, v any) (TicketStatus, error) {
 	var res TicketStatus
 	err := res.UnmarshalGQL(v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNTicketStatus2githubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketStatus(ctx context.Context, sel ast.SelectionSet, v TicketStatus) graphql.Marshaler {
+func (ec *executionContext) marshalNTicketStatus2anxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketStatus(ctx context.Context, sel ast.SelectionSet, v TicketStatus) graphql.Marshaler {
 	return v
 }
 
@@ -5017,14 +5017,14 @@ func (ec *executionContext) marshalOString2ᚖstring(ctx context.Context, sel as
 	return res
 }
 
-func (ec *executionContext) marshalOTicket2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicket(ctx context.Context, sel ast.SelectionSet, v *Ticket) graphql.Marshaler {
+func (ec *executionContext) marshalOTicket2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicket(ctx context.Context, sel ast.SelectionSet, v *Ticket) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return ec._Ticket(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalOTicketPriority2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketPriority(ctx context.Context, v any) (*TicketPriority, error) {
+func (ec *executionContext) unmarshalOTicketPriority2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketPriority(ctx context.Context, v any) (*TicketPriority, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -5033,14 +5033,14 @@ func (ec *executionContext) unmarshalOTicketPriority2ᚖgithubᚗcomᚋayushᚑp
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalOTicketPriority2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketPriority(ctx context.Context, sel ast.SelectionSet, v *TicketPriority) graphql.Marshaler {
+func (ec *executionContext) marshalOTicketPriority2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketPriority(ctx context.Context, sel ast.SelectionSet, v *TicketPriority) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return v
 }
 
-func (ec *executionContext) unmarshalOTicketStatus2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketStatus(ctx context.Context, v any) (*TicketStatus, error) {
+func (ec *executionContext) unmarshalOTicketStatus2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketStatus(ctx context.Context, v any) (*TicketStatus, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -5049,14 +5049,14 @@ func (ec *executionContext) unmarshalOTicketStatus2ᚖgithubᚗcomᚋayushᚑpan
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalOTicketStatus2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐTicketStatus(ctx context.Context, sel ast.SelectionSet, v *TicketStatus) graphql.Marshaler {
+func (ec *executionContext) marshalOTicketStatus2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐTicketStatus(ctx context.Context, sel ast.SelectionSet, v *TicketStatus) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return v
 }
 
-func (ec *executionContext) marshalOUser2ᚖgithubᚗcomᚋayushᚑpandyaᚋticketsᚋgraphqlᚐUser(ctx context.Context, sel ast.SelectionSet, v *User) graphql.Marshaler {
+func (ec *executionContext) marshalOUser2ᚖanxietyᚋfrontendᚋfrontend_interviewᚋmyᚑappᚋGraphqlᚋgraphqlᚐUser(ctx context.Context, sel ast.SelectionSet, v *User) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
