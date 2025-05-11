@@ -7,11 +7,51 @@ package graphql
 import (
 	"context"
 	"fmt"
+	"time"
+
+	"Graphql/utils"
 )
 
 // CreateTicket is the resolver for the createTicket field.
 func (r *mutationResolver) CreateTicket(ctx context.Context, title string, description *string, priority *TicketPriority, assigneeID *string, reporterID string, tags []*string) (*Ticket, error) {
-	panic(fmt.Errorf("not implemented: CreateTicket - createTicket"))
+	// Generate a unique ID for the ticket
+	id := utils.GenerateID()
+
+	// Set default priority if not provided
+	ticketPriority := TicketPriorityMedium
+	if priority != nil {
+		ticketPriority = *priority
+	}
+
+	// Get current timestamp for created/updated times
+	now := time.Now().UTC().Format(time.RFC3339)
+
+	// Create the new ticket
+	ticket := &Ticket{
+		ID:        id,
+		Title:     title,
+		Status:    TicketStatusOpen, // New tickets are always OPEN
+		Priority:  ticketPriority,
+		CreatedAt: now,
+		UpdatedAt: now,
+		Reporter:  &User{ID: reporterID},
+		Tags:      tags,
+	}
+
+	// Set optional fields if provided
+	if description != nil {
+		ticket.Description = description
+	}
+	if assigneeID != nil {
+		ticket.Assignee = &User{ID: *assigneeID}
+	}
+
+	// Use the injected database dependency to store the ticket
+	if err := r.Resolver.db.CreateTicket(ctx, ticket); err != nil {
+		return nil, fmt.Errorf("failed to create ticket: %w", err)
+	}
+
+	return ticket, nil
 }
 
 // UpdateTicket is the resolver for the updateTicket field.
@@ -31,7 +71,13 @@ func (r *queryResolver) Tickets(ctx context.Context) ([]*Ticket, error) {
 
 // Ticket is the resolver for the ticket field.
 func (r *queryResolver) Ticket(ctx context.Context, id string) (*Ticket, error) {
-	panic(fmt.Errorf("not implemented: Ticket - ticket"))
+	fmt.Println("Ticket ID:", id)
+	ticket, err := r.Resolver.db.GetTicket(ctx, id)
+	if err != nil {
+		return nil, fmt.Errorf("failed to get ticket: %w", err)
+	}
+	fmt.Println(ticket)
+	return ticket, nil
 }
 
 // Mutation returns MutationResolver implementation.
