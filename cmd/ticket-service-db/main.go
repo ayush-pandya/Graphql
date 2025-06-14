@@ -10,8 +10,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ayush-pandya/Graphql/internal/database"
-	ticketpb "github.com/ayush-pandya/Graphql/proto/ticket"
+	"gRPC/database"
+	ticketpb "gRPC/proto/ticket"
+
 	"github.com/google/uuid"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/timestamppb"

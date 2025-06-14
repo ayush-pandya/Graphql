@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ticket;
 
-option go_package = "github.com/ayush-pandya/Graphql/proto/ticket";
+option go_package = "gRPC/proto/ticket";
 
 import "google/protobuf/timestamp.proto";
 
@@ -43,6 +43,7 @@ message CreateTicketRequest {
   TicketPriority priority = 3;
   string assignee_id = 4;
   repeated string tags = 5;
+  string reporter_id = 6;
 }
 
 message CreateTicketResponse {
