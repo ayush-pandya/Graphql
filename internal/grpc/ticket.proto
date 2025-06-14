@@ -1,0 +1,22 @@
+syntax = "proto3";
+package pb;
+option go_package = "github.com/ayush-pandya/Graphql/internal/grpc/pb;pb";
+
+message Ticket {
+    string id = 1;
+    string title = 2;
+}
+message PostTicketCreateRequest {
+    string title = 1;
+}
+
+message PostTicketCreateResponse {
+    Ticket ticket = 1;
+}
+
+
+service TicketService {
+    rpc CreateTicket (PostTicketCreateRequest) returns (PostTicketCreateResponse){
+
+    }
+}   
